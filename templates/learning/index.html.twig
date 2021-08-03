@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello LearningController!{% endblock %}
+
+{% block body %}
+<body>
+<form method="post">
+    <h1>Using Monolog with Composer</h1>
+
+    <input type="text" name="message" placeholder="My log message" class="form-control" required />
+
+    <button formaction="{{ path('info')}}" type="submit" name="type" value="DEBUG" class="btn btn-info">DEBUG (100): Detailed debug information.</button>
+    <button formaction="{{ path('info')}}" type="submit" name="type" value="INFO" class="btn btn-info">INFO (200): Interesting events. Examples: User logs in, SQL logs.
+    </button>
+    <button formaction="{{ path('info')}}" type="submit" name="type" value="NOTICE" class="btn btn-info">NOTICE (250): Normal but significant events.
+    </button>
+    <button formaction="{{ path('warninglog')}}" type="submit" name="type" value="WARNING" class="btn btn-warning">WARNING (300): Exceptional occurrences that are not errors. Examples: Use of deprecated APIs, poor use of an API, undesirable things that are not necessarily wrong.
+    </button>
+    <button formaction="{{ path('warningmail')}}" type="submit" name="type" value="ERROR" class="btn btn-danger">ERROR (400): Runtime errors that do not require immediate action but should typically be logged and monitored.
+    </button>
+    <button formaction="{{ path('warningmail')}}" type="submit" name="type" value="CRITICAL" class="btn btn-danger">CRITICAL (500): Critical conditions. Example: Application component unavailable, unexpected exception.
+    </button>
+    <button formaction="{{ path('warningmail')}}" type="submit" name="type" value="ALERT" class="btn btn-danger">ALERT (550): Action must be taken immediately. Example: Entire website down, database unavailable, etc. This should trigger the SMS alerts and wake you up.
+    </button>
+    <button formaction="{{ path('emergency')}}" type="submit" name="type" value="EMERGENCY" class="btn btn-dark">EMERGENCY (600): Emergency: system is unusable.
+    </button>
+</form>
+
+<style>
+    button {
+        display: block;
+        margin: 12px 0px;
+    }
+</style>
+
+</body>
+{% endblock %}
