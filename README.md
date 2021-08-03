@@ -21,7 +21,7 @@ We are going to use a popular open source tool to log messages: monolog. To mana
 
 
 ## What did I learn from this exercise
-- learning to work with composer and handle packages
+- Learning about composer and handle packages
 - Basic understanding of Monolog
 - Learn to find a workaround if a package is outdated
 - Log to a file with StreamHandler
@@ -33,7 +33,7 @@ We are going to use a popular open source tool to log messages: monolog. To mana
 ## Struggles
 limited information when it comes to trouble shooting. Some of the packages were outdated and trying to find an alternative wasn't that easy.
 
-### Must-have features
+## Must-have features
 Use the buttons.html page to submit log messages and write the message in a log file.
 
 Write each color of buttons to a different file:
@@ -44,4 +44,6 @@ danger: warning.log and email these messages using NativeMailerHandler
 dark: emergency.log and email these messages using NativeMailerHandler
 You do not need to use an if to get the messages written in different files
 
+## Nice to have features
+Try to experiment with different Monolog features like different Handlers!
 
