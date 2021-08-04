@@ -31,7 +31,7 @@ We are going to use a popular open source tool to log messages: monolog. To mana
 - Passing data from twig to controller (with a post method)
 
 ## Struggles
-limited information when it comes to trouble shooting. Some of the packages were outdated and trying to find an alternative wasn't that easy.
+Limited information on Stack Overflow/Google.. when it comes to trouble shooting on this topic. Some of the packages were outdated and trying to find an alternative wasn't that easy.
 
 ## Must-have features
 Use the buttons.html page to submit log messages and write the message in a log file.
