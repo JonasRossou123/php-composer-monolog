@@ -1,6 +1,6 @@
 # Title: MVC/Twig
 
-- Repository: `mvc-twig-symfony`
+- Repository: `php-composer-monolog`
 - Type of Challenge: `Learning challenge`
 - Duration: `1 day`
 - Deployment strategy : `NA`
@@ -9,15 +9,15 @@
 ## Project contributors:
 - Jonas Rossou
 
-## Learning objectives?
+## Learning objectives
 - To be able to manage packages with composer
-- Understand what composer does for you
+- Understand what composer can do
 - Work with monolog
 - Get used to work with different handlers
 
 
 ## The Mission
-We are going to use a popular open source tool to log messages: monolog. To manage this external package we will use composer
+We are going to use a popular open source tool to log messages: monolog. To manage this external package we will use composer.
 
 
 ## What did I learn from this exercise
